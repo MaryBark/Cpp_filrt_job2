@@ -126,17 +126,7 @@ private:
 
     IpAddrPoolContainer container;
 };
-
-// ("",  '.') -> [""]
-// ("11", '.') -> ["11"]
-// ("..", '.') -> ["", "", ""]
-// ("11.", '.') -> ["11", ""]
-// (".11", '.') -> ["", "11"]
-// ("11.22", '.') -> ["11", "22"]
 std::vector<std::string> split(const std::string &str, char d);
-
 int version();
-
-
 
 #endif // FILTR_IP_LIB_H
